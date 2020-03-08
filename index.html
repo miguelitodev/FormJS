@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card s12">
+            <form onsubmit="validar()">
+                <h1>Contato</h1>
+                <div class="input-field col s6">
+                    <input type="text" id="nome" class="validate" required>
+                    <label for="nome">Nome</label>
+                </div>
+                <div class="input-field col s6">
+                    <input type="email" id="email" class="validate" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-field col s6">
+                    <input type="text" id="titulo" class="validate" required>
+                    <label for="titulo">Título</label>
+                </div>
+                <div class="input-field col s6">
+                    <textarea id="msg" class="materialize-textarea" required></textarea>
+                    <label for="msg">Sua mensagem..</label>
+                </div>
+                
+                <button type="submit" class="btn waves-effect waves-light">
+                    ENVIAR
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="./src/js/validar.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
